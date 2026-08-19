@@ -45,7 +45,7 @@ const cases = [
     description: "跟随音乐节拍滑动翻卡，以 Perfect、Great 与 Combo 反馈完成一轮挑战。",
     src: katseyeEmbedUrl,
     href: katseyePublishedUrl,
-    cover: "/covers/katseye-rotated.png",
+    cover: "/covers/katseye-free-normal.png",
     accent: "cyan",
   },
 ] as const;
