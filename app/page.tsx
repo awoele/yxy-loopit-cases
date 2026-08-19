@@ -4,10 +4,10 @@ const jjkPublishedUrl =
   "https://share.loopit.me/game/bf21b412-b9f9-44bf-9888-030ef1c95912?l_data=%7B%22said%22%3A%22sa_5Zp4NDM7%22%2C%22ssuid%22%3A%22ss_KYDKucT4%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%22bf21b412-b9f9-44bf-9888-030ef1c95912%22%7D";
 const jjkEmbedUrl =
   "https://cdn-cf.loopit.me/public/game/bf21b412-b9f9-44bf-9888-030ef1c95912/2080563005904424960/workspace/dist/index.html?cfg_hash=d3e8f213";
-const blackpinkCardHuntPublishedUrl =
-  "https://share.loopit.me/game/db87efd6-0d72-455c-a5ad-868e5b27b601?l_data=%7B%22said%22%3A%22sa_yN7SkXWM%22%2C%22ssuid%22%3A%22ss_eF4FnCWZ%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%22db87efd6-0d72-455c-a5ad-868e5b27b601%22%7D";
-const blackpinkCardHuntEmbedUrl =
-  "https://cdn-cf.loopit.me/public/game/db87efd6-0d72-455c-a5ad-868e5b27b601/2081720053337690112/workspace/dist/index.html?cfg_hash=d3e8f213";
+const loopitTemplatesPublishedUrl =
+  "https://share.loopit.me/game/68f49a08-165b-4fb9-8c65-2d8fa43e8633?l_data=%7B%22said%22%3A%22sa_xXqafLCT%22%2C%22ssuid%22%3A%22ss_ZRU95KVv%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%2268f49a08-165b-4fb9-8c65-2d8fa43e8633%22%7D";
+const loopitTemplatesEmbedUrl =
+  "https://cdn-cf.loopit.me/public/game/68f49a08-165b-4fb9-8c65-2d8fa43e8633/2090045348146876416/workspace/dist/index.html?l_data=%7B%22said%22%3A%22sa_xXqafLCT%22%2C%22ssuid%22%3A%22ss_ZRU95KVv%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%2268f49a08-165b-4fb9-8c65-2d8fa43e8633%22%7D";
 const katseyePublishedUrl =
   "https://share.loopit.me/game/31aa1f18-6298-48ef-b7f4-da9c5988fc28?l_data=%7B%22said%22%3A%22sa_9nHN9qqZ%22%2C%22ssuid%22%3A%22ss_EcWTtzLW%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%2231aa1f18-6298-48ef-b7f4-da9c5988fc28%22%7D";
 const katseyeEmbedUrl =
@@ -28,13 +28,13 @@ const cases = [
   },
   {
     index: "02",
-    title: "BLACKPINK Card Hunt",
-    subtitle: "翻牌配对收集",
-    meta: "MATCH · FLIP · COLLECTION",
-    description: "识别模糊照片完成配对，通过连续翻牌建立 Combo，并解锁收集 28 张 BLACKPINK 卡牌。",
-    src: blackpinkCardHuntEmbedUrl,
-    href: blackpinkCardHuntPublishedUrl,
-    cover: "/covers/card-hunt-final.png",
+    title: "Pick. Play. Make.",
+    subtitle: "Loopit 模板探索互动",
+    meta: "TEMPLATE · PLAY · CREATE",
+    description: "以图片为入口串联模板选择、热门案例试玩与再创作，让用户在同一页面完成“看懂—试玩—开始制作”。",
+    src: loopitTemplatesEmbedUrl,
+    href: loopitTemplatesPublishedUrl,
+    cover: "/covers/loopit-template-case.png",
     accent: "pink",
   },
   {
@@ -45,7 +45,7 @@ const cases = [
     description: "跟随音乐节拍滑动翻卡，以 Perfect、Great 与 Combo 反馈完成一轮挑战。",
     src: katseyeEmbedUrl,
     href: katseyePublishedUrl,
-    cover: "/covers/katseye-final.png",
+    cover: "/covers/katseye-rotated.png",
     accent: "cyan",
   },
 ] as const;
@@ -62,8 +62,10 @@ export default function Home() {
           href="https://www.loopit.me/"
           target="_blank"
           rel="noreferrer"
+          aria-label="访问 Loopit 官网"
         >
-          LOOPIT.ME <span aria-hidden="true">↗</span>
+          <img className="loopit-logo" src="/loopit-logo.png" alt="Loopit" />
+          <span aria-hidden="true">↗</span>
         </a>
       </header>
 
@@ -72,7 +74,7 @@ export default function Home() {
         <div className="hero-copy">
           <h1>AI 创意互动实验</h1>
           <p>
-            将创意假设转化为可直接试玩的移动端互动原型，覆盖策略、选择与节奏三类机制。
+            将创意假设转化为可直接试玩的互动原型，覆盖策略、模板探索与节奏三类机制。
           </p>
         </div>
       </section>

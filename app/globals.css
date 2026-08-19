@@ -69,10 +69,17 @@ main {
 
 .official-link {
   display: inline-flex;
-  gap: 8px;
+  gap: 7px;
   align-items: center;
   border-bottom: 1px solid transparent;
   transition: border-color 180ms ease;
+}
+
+.loopit-logo {
+  width: auto;
+  height: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 12px rgba(0, 126, 139, 0.18));
 }
 
 .official-link:hover,
@@ -129,7 +136,10 @@ main {
 .case-track {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(18px, 2vw, 30px);
+  gap: clamp(18px, 1.7vw, 24px);
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
 }
 
 .case-card {
@@ -366,8 +376,10 @@ footer p {
   .case-track {
     display: flex;
     gap: 20px;
+    max-width: none;
     overflow-x: auto;
     padding: 0 24px 20px;
+    margin-inline: 0;
     scroll-padding-left: 24px;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
@@ -378,7 +390,7 @@ footer p {
   }
 
   .case-card {
-    flex: 0 0 min(390px, 82vw);
+    flex: 0 0 min(348px, 78vw);
     scroll-snap-align: start;
   }
 }
@@ -390,6 +402,10 @@ footer p {
 
   .wordmark span {
     display: none;
+  }
+
+  .loopit-logo {
+    height: 38px;
   }
 
   .hero {

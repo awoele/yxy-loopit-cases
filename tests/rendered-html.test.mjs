@@ -41,7 +41,7 @@ test("renders the three-case showcase and social metadata", async () => {
   const html = await response.text();
   assert.match(html, /AI 创意互动实验/);
   assert.match(html, /#MyJJKDomain/);
-  assert.match(html, /BLACKPINK Card Hunt/);
+  assert.match(html, /Pick\. Play\. Make\./);
   assert.match(html, /KATSEYE Beat Flip/);
   assert.match(html, /https:\/\/showcase\.local\/og\.png/);
   assert.doesNotMatch(html, /Expression Hunt|表情捕捉/i);
@@ -56,14 +56,15 @@ test("uses only the three published Loopit cases", async () => {
     assert.rejects(access(jjk)),
     assert.rejects(access(katseye)),
     access(path.join(rootPath, "dist", "client", "og.png")),
-    access(path.join(rootPath, "dist", "client", "covers", "card-hunt-final.png")),
-    access(path.join(rootPath, "dist", "client", "covers", "katseye-final.png")),
+    access(path.join(rootPath, "dist", "client", "covers", "loopit-template-case.png")),
+    access(path.join(rootPath, "dist", "client", "covers", "katseye-rotated.png")),
+    access(path.join(rootPath, "dist", "client", "loopit-logo.png")),
   ]);
   const response = await render();
   const html = await response.text();
   for (const id of [
     "bf21b412-b9f9-44bf-9888-030ef1c95912",
-    "db87efd6-0d72-455c-a5ad-868e5b27b601",
+    "68f49a08-165b-4fb9-8c65-2d8fa43e8633",
     "31aa1f18-6298-48ef-b7f4-da9c5988fc28",
   ]) {
     assert.match(html, new RegExp(`https://(?:share|cdn-cf)\\.loopit\\.me/[^\"']*${id}`));
