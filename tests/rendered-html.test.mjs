@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile, readdir } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
@@ -48,29 +48,24 @@ test("renders the three-case showcase and social metadata", async () => {
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });
 
-test("ships both same-origin playable builds without camera code", async () => {
+test("uses only the three published Loopit cases", async () => {
   const jjk = path.join(rootPath, "dist", "client", "cases", "jjk", "index.html");
   const katseye = path.join(rootPath, "dist", "client", "cases", "katseye", "index.html");
-  const katseyeAssets = path.join(rootPath, "dist", "client", "cases", "katseye", "assets");
 
   await Promise.all([
-    access(jjk),
-    access(katseye),
+    assert.rejects(access(jjk)),
+    assert.rejects(access(katseye)),
     access(path.join(rootPath, "dist", "client", "og.png")),
   ]);
-  const files = await readdir(katseyeAssets, { recursive: true });
-  const scripts = files.filter((file) => file.endsWith(".js"));
-  const source = (
-    await Promise.all(
-      scripts.map((file) => readFile(path.join(katseyeAssets, file), "utf8")),
-    )
-  ).join("\n");
-
-  assert.ok(scripts.length > 0);
-  assert.doesNotMatch(
-    source,
-    /Expression Hunt|ExpressionHunt|FaceLandmarker|getUserMedia|useCamera/,
-  );
+  const response = await render();
+  const html = await response.text();
+  for (const id of [
+    "bf21b412-b9f9-44bf-9888-030ef1c95912",
+    "049b0445-dfe4-439f-8bcc-6930f464993f",
+    "31aa1f18-6298-48ef-b7f4-da9c5988fc28",
+  ]) {
+    assert.match(html, new RegExp(`https://(?:share|cdn-cf)\\.loopit\\.me/[^\"']*${id}`));
+  }
 });
 
 test("starter preview files and dependency are removed", async () => {
