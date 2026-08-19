@@ -34,8 +34,7 @@ const cases = [
     description: "识别模糊照片完成配对，通过连续翻牌建立 Combo，并解锁收集 28 张 BLACKPINK 卡牌。",
     src: blackpinkCardHuntEmbedUrl,
     href: blackpinkCardHuntPublishedUrl,
-    cover:
-      "https://cdn-cf.loopit.me/users/loopit/2061303765843070976/auto_workspace/db87efd6-0d72-455c-a5ad-868e5b27b601/2081720053337690112/thumbnail-4fc659d8bf883626.webp",
+    cover: "/covers/card-hunt-final.png",
     accent: "pink",
   },
   {
@@ -46,8 +45,7 @@ const cases = [
     description: "跟随音乐节拍滑动翻卡，以 Perfect、Great 与 Combo 反馈完成一轮挑战。",
     src: katseyeEmbedUrl,
     href: katseyePublishedUrl,
-    cover:
-      "https://cdn-cf.loopit.me/users/loopit/2061303765843070976/auto_workspace/31aa1f18-6298-48ef-b7f4-da9c5988fc28/2076582810969190400/thumbnail-0ad715fddbf8ce48.webp",
+    cover: "/covers/katseye-final.png",
     accent: "cyan",
   },
 ] as const;

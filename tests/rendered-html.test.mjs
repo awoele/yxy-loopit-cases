@@ -56,6 +56,8 @@ test("uses only the three published Loopit cases", async () => {
     assert.rejects(access(jjk)),
     assert.rejects(access(katseye)),
     access(path.join(rootPath, "dist", "client", "og.png")),
+    access(path.join(rootPath, "dist", "client", "covers", "card-hunt-final.png")),
+    access(path.join(rootPath, "dist", "client", "covers", "katseye-final.png")),
   ]);
   const response = await render();
   const html = await response.text();
