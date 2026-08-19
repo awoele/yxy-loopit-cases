@@ -4,10 +4,10 @@ const jjkPublishedUrl =
   "https://share.loopit.me/game/bf21b412-b9f9-44bf-9888-030ef1c95912?l_data=%7B%22said%22%3A%22sa_5Zp4NDM7%22%2C%22ssuid%22%3A%22ss_KYDKucT4%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%22bf21b412-b9f9-44bf-9888-030ef1c95912%22%7D";
 const jjkEmbedUrl =
   "https://cdn-cf.loopit.me/public/game/bf21b412-b9f9-44bf-9888-030ef1c95912/2080563005904424960/workspace/dist/index.html?cfg_hash=d3e8f213";
-const blackOrPinkPublishedUrl =
-  "https://share.loopit.me/game/049b0445-dfe4-439f-8bcc-6930f464993f";
-const blackOrPinkEmbedUrl =
-  "https://cdn-cf.loopit.me/public/game/049b0445-dfe4-439f-8bcc-6930f464993f/2082045843170414592/workspace/dist/index.html?cfg_hash=d3e8f213";
+const blackpinkCardHuntPublishedUrl =
+  "https://share.loopit.me/game/db87efd6-0d72-455c-a5ad-868e5b27b601?l_data=%7B%22said%22%3A%22sa_yN7SkXWM%22%2C%22ssuid%22%3A%22ss_eF4FnCWZ%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%22db87efd6-0d72-455c-a5ad-868e5b27b601%22%7D";
+const blackpinkCardHuntEmbedUrl =
+  "https://cdn-cf.loopit.me/public/game/db87efd6-0d72-455c-a5ad-868e5b27b601/2081720053337690112/workspace/dist/index.html?cfg_hash=d3e8f213";
 const katseyePublishedUrl =
   "https://share.loopit.me/game/31aa1f18-6298-48ef-b7f4-da9c5988fc28?l_data=%7B%22said%22%3A%22sa_9nHN9qqZ%22%2C%22ssuid%22%3A%22ss_EcWTtzLW%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%2231aa1f18-6298-48ef-b7f4-da9c5988fc28%22%7D";
 const katseyeEmbedUrl =
@@ -28,14 +28,14 @@ const cases = [
   },
   {
     index: "02",
-    title: "BLACK or PINK",
-    subtitle: "30 秒滑动选择",
-    meta: "SWIPE · COMBO · RESULT",
-    description: "通过连续左右滑动完成选择，叠加 Combo 与 FEVER，生成个人结果光谱。",
-    src: blackOrPinkEmbedUrl,
-    href: blackOrPinkPublishedUrl,
+    title: "BLACKPINK Card Hunt",
+    subtitle: "翻牌配对收集",
+    meta: "MATCH · FLIP · COLLECTION",
+    description: "识别模糊照片完成配对，通过连续翻牌建立 Combo，并解锁收集 28 张 BLACKPINK 卡牌。",
+    src: blackpinkCardHuntEmbedUrl,
+    href: blackpinkCardHuntPublishedUrl,
     cover:
-      "https://cdn-cf.loopit.me/users/loopit/2061303765843070976/auto_workspace/049b0445-dfe4-439f-8bcc-6930f464993f/2082045843170414592/thumbnail-e0894422b06b524c.webp",
+      "https://cdn-cf.loopit.me/users/loopit/2061303765843070976/auto_workspace/db87efd6-0d72-455c-a5ad-868e5b27b601/2081720053337690112/thumbnail-4fc659d8bf883626.webp",
     accent: "pink",
   },
   {

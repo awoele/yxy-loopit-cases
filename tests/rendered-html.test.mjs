@@ -41,7 +41,7 @@ test("renders the three-case showcase and social metadata", async () => {
   const html = await response.text();
   assert.match(html, /AI 创意互动实验/);
   assert.match(html, /#MyJJKDomain/);
-  assert.match(html, /BLACK or PINK/);
+  assert.match(html, /BLACKPINK Card Hunt/);
   assert.match(html, /KATSEYE Beat Flip/);
   assert.match(html, /https:\/\/showcase\.local\/og\.png/);
   assert.doesNotMatch(html, /Expression Hunt|表情捕捉/i);
@@ -61,7 +61,7 @@ test("uses only the three published Loopit cases", async () => {
   const html = await response.text();
   for (const id of [
     "bf21b412-b9f9-44bf-9888-030ef1c95912",
-    "049b0445-dfe4-439f-8bcc-6930f464993f",
+    "db87efd6-0d72-455c-a5ad-868e5b27b601",
     "31aa1f18-6298-48ef-b7f4-da9c5988fc28",
   ]) {
     assert.match(html, new RegExp(`https://(?:share|cdn-cf)\\.loopit\\.me/[^\"']*${id}`));
