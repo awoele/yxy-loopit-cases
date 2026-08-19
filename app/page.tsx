@@ -5,9 +5,9 @@ const jjkPublishedUrl =
 const jjkEmbedUrl =
   "https://cdn-cf.loopit.me/public/game/bf21b412-b9f9-44bf-9888-030ef1c95912/2080563005904424960/workspace/dist/index.html?cfg_hash=d3e8f213";
 const loopitTemplatesPublishedUrl =
-  "https://share.loopit.me/game/68f49a08-165b-4fb9-8c65-2d8fa43e8633?l_data=%7B%22said%22%3A%22sa_xXqafLCT%22%2C%22ssuid%22%3A%22ss_ZRU95KVv%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%2268f49a08-165b-4fb9-8c65-2d8fa43e8633%22%7D";
+  "https://share.loopit.me/game/809bf4dd-d9e8-4933-93c9-2d4ce7b02ad0";
 const loopitTemplatesEmbedUrl =
-  "https://cdn-cf.loopit.me/public/game/68f49a08-165b-4fb9-8c65-2d8fa43e8633/2090045348146876416/workspace/dist/index.html?l_data=%7B%22said%22%3A%22sa_xXqafLCT%22%2C%22ssuid%22%3A%22ss_ZRU95KVv%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%2268f49a08-165b-4fb9-8c65-2d8fa43e8633%22%7D";
+  "https://cdn-cf.loopit.me/public/game/809bf4dd-d9e8-4933-93c9-2d4ce7b02ad0/2090060407128469504/workspace/dist/index.html";
 const katseyePublishedUrl =
   "https://share.loopit.me/game/31aa1f18-6298-48ef-b7f4-da9c5988fc28?l_data=%7B%22said%22%3A%22sa_9nHN9qqZ%22%2C%22ssuid%22%3A%22ss_EcWTtzLW%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%2231aa1f18-6298-48ef-b7f4-da9c5988fc28%22%7D";
 const katseyeEmbedUrl =
