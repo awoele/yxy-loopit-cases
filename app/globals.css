@@ -136,7 +136,7 @@ main {
 .case-track {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(28px, 3vw, 40px);
+  gap: clamp(40px, 3.8vw, 52px);
   width: 100%;
   max-width: 1120px;
   margin-inline: auto;
@@ -164,11 +164,12 @@ main {
 .play-window {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 9 / 15.35;
+  aspect-ratio: 9 / 15;
   width: 100%;
   background: var(--ink);
   border: 5px solid var(--ink);
   border-radius: 30px;
+  outline: 1px solid rgba(255, 255, 255, 0.28);
   box-shadow: 0 24px 55px rgba(80, 0, 35, 0.24);
   transform: translateY(0);
   transition: transform 220ms ease, box-shadow 220ms ease;
@@ -323,18 +324,6 @@ main {
   border-bottom: 1px solid currentColor;
 }
 
-.case-card--violet .play-window {
-  outline: 1px solid rgba(142, 90, 255, 0.8);
-}
-
-.case-card--pink .play-window {
-  outline: 1px solid rgba(255, 185, 222, 0.85);
-}
-
-.case-card--cyan .play-window {
-  outline: 1px solid rgba(80, 242, 255, 0.78);
-}
-
 footer {
   display: flex;
   justify-content: space-between;
@@ -375,7 +364,7 @@ footer p {
 
   .case-track {
     display: flex;
-    gap: 24px;
+    gap: 28px;
     max-width: none;
     overflow-x: auto;
     padding: 0 24px 20px;
@@ -390,7 +379,7 @@ footer p {
   }
 
   .case-card {
-    flex: 0 0 min(348px, 78vw);
+    flex: 0 0 min(336px, 76vw);
     scroll-snap-align: start;
   }
 }

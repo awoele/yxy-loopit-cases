@@ -8,7 +8,7 @@ const jjkPublishedUrl =
 const jjkEmbedUrl =
   "https://cdn-cf.loopit.me/public/game/bf21b412-b9f9-44bf-9888-030ef1c95912/2080563005904424960/workspace/dist/index.html?cfg_hash=d3e8f213";
 const loopitTemplatesPublishedUrl =
-  "https://share.loopit.me/game/809bf4dd-d9e8-4933-93c9-2d4ce7b02ad0";
+  "https://share.loopit.me/game/5f168612-eddb-4432-89f0-a8130fe0599b?l_data=%7B%22said%22%3A%22sa_532NvcWJ%22%2C%22ssuid%22%3A%22ss_YFu9KYmS%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%225f168612-eddb-4432-89f0-a8130fe0599b%22%7D";
 const loopitTemplatesEmbedUrl =
   "https://cdn-cf.loopit.me/public/game/809bf4dd-d9e8-4933-93c9-2d4ce7b02ad0/2090060407128469504/workspace/dist/index.html";
 const katseyePublishedUrl =

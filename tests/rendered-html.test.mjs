@@ -67,7 +67,7 @@ test("uses only the three published Loopit cases", async () => {
   const html = await response.text();
   for (const id of [
     "bf21b412-b9f9-44bf-9888-030ef1c95912",
-    "809bf4dd-d9e8-4933-93c9-2d4ce7b02ad0",
+    "5f168612-eddb-4432-89f0-a8130fe0599b",
     "31aa1f18-6298-48ef-b7f4-da9c5988fc28",
   ]) {
     assert.match(html, new RegExp(`https://(?:share|cdn-cf)\\.loopit\\.me/[^\"']*${id}`));
