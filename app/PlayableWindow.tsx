@@ -6,10 +6,19 @@ type PlayableWindowProps = Readonly<{
   src: string;
   title: string;
   cover: string;
+  contentScale?: 1 | 0.85;
 }>;
 
-export function PlayableWindow({ src, title, cover }: PlayableWindowProps) {
+export function PlayableWindow({
+  src,
+  title,
+  cover,
+  contentScale = 1,
+}: PlayableWindowProps) {
   const [active, setActive] = useState(false);
+  const viewportClassName = contentScale === 0.85
+    ? "play-viewport play-viewport--scaled"
+    : "play-viewport";
 
   return (
     <div className="play-window">
@@ -31,12 +40,14 @@ export function PlayableWindow({ src, title, cover }: PlayableWindowProps) {
       </div>
 
       {active ? (
-        <iframe
-          src={src}
-          title={title}
-          scrolling="no"
-          allow="autoplay; fullscreen; accelerometer; gyroscope"
-        />
+        <div className={viewportClassName}>
+          <iframe
+            src={src}
+            title={title}
+            scrolling="no"
+            allow="autoplay; fullscreen; accelerometer; gyroscope"
+          />
+        </div>
       ) : (
         <button
           type="button"

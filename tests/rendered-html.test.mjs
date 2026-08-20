@@ -85,9 +85,16 @@ test("starter preview files and dependency are removed", async () => {
 });
 
 test("keeps embedded playables free of native scrollbars", async () => {
-  const playableWindow = await readFile(
-    new URL("../app/PlayableWindow.tsx", import.meta.url),
-    "utf8",
-  );
+  const [playableWindow, page, styles] = await Promise.all([
+    readFile(new URL("../app/PlayableWindow.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
+  ]);
   assert.match(playableWindow, /scrolling="no"/);
+  assert.equal((page.match(/contentScale:\s*0\.85/g) ?? []).length, 1);
+  assert.equal((page.match(/contentScale:\s*1,/g) ?? []).length, 2);
+  assert.match(
+    styles,
+    /\.play-viewport--scaled iframe\s*\{[^}]*width:\s*117\.6471%;[^}]*height:\s*117\.6471%;[^}]*transform:\s*scale\(0\.85\)/s,
+  );
 });

@@ -28,6 +28,7 @@ const cases = [
     cover:
       "https://cdn-cf.loopit.me/users/loopit/2061303765843070976/auto_workspace/bf21b412-b9f9-44bf-9888-030ef1c95912/2080563005904424960/thumbnail-3a9cc5d054af0077.webp",
     accent: "violet",
+    contentScale: 1,
   },
   {
     index: "02",
@@ -39,6 +40,7 @@ const cases = [
     href: loopitTemplatesPublishedUrl,
     cover: publicAsset("/covers/loopit-template-case.png"),
     accent: "pink",
+    contentScale: 0.85,
   },
   {
     index: "03",
@@ -50,6 +52,7 @@ const cases = [
     href: katseyePublishedUrl,
     cover: publicAsset("/covers/katseye-free-normal.png"),
     accent: "cyan",
+    contentScale: 1,
   },
 ] as const;
 
@@ -98,6 +101,7 @@ export default function Home() {
               src={item.src}
               title={`${item.title} ${item.subtitle}`}
               cover={item.cover}
+              contentScale={item.contentScale}
             />
 
             <div className="case-copy">
