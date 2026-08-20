@@ -400,15 +400,48 @@ footer p {
   }
 
   .hero {
-    padding-top: 40px;
+    gap: 14px;
+    padding: 34px 0 48px;
   }
 
   .hero h1 {
-    font-size: clamp(34px, 9.5vw, 58px);
+    font-size: clamp(30px, 9vw, 42px);
   }
 
   .hero-copy > p {
-    font-size: 14px;
+    max-width: 320px;
+    font-size: 13px;
+  }
+
+  .case-track {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 72px;
+    overflow: visible;
+    padding: 0 24px;
+    margin-inline: auto;
+    scroll-padding-left: 0;
+    scroll-snap-type: none;
+  }
+
+  .case-card {
+    width: min(100%, 320px);
+    min-width: 0;
+    justify-self: center;
+    scroll-snap-align: none;
+  }
+
+  .case-card:hover .play-window {
+    transform: none;
+  }
+
+  .case-copy h2 {
+    font-size: clamp(24px, 7.4vw, 29px);
+  }
+
+  .case-description {
+    min-height: 0;
+    margin: 12px 0 16px;
   }
 
   footer {

@@ -29,6 +29,7 @@ test("exports the showcase under the GitHub repository base path", async () => {
       new RegExp(`https://(?:share|cdn-cf)\\.loopit\\.me/[^"]*${id}`),
     );
   }
+  assert.doesNotMatch(html, /809bf4dd-d9e8-4933-93c9-2d4ce7b02ad0/);
 
   await Promise.all([
     access(new URL("og.png", output)),
