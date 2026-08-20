@@ -79,3 +79,11 @@ test("starter preview files and dependency are removed", async () => {
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   await assert.rejects(access(path.join(rootPath, "app", "_sites-preview")));
 });
+
+test("keeps embedded playables free of native scrollbars", async () => {
+  const playableWindow = await readFile(
+    new URL("../app/PlayableWindow.tsx", import.meta.url),
+    "utf8",
+  );
+  assert.match(playableWindow, /scrolling="no"/);
+});

@@ -135,10 +135,11 @@ main {
 
 .case-track {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(40px, 3.8vw, 52px);
+  grid-template-columns: repeat(3, minmax(0, 320px));
+  column-gap: clamp(72px, 8vw, 120px);
+  justify-content: space-between;
   width: 100%;
-  max-width: 1120px;
+  max-width: 1280px;
   margin-inline: auto;
 }
 
@@ -364,7 +365,8 @@ footer p {
 
   .case-track {
     display: flex;
-    gap: 28px;
+    gap: 48px;
+    justify-content: flex-start;
     max-width: none;
     overflow-x: auto;
     padding: 0 24px 20px;
@@ -379,7 +381,7 @@ footer p {
   }
 
   .case-card {
-    flex: 0 0 min(336px, 76vw);
+    flex: 0 0 min(320px, 72vw);
     scroll-snap-align: start;
   }
 }

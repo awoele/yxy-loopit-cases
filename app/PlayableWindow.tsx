@@ -34,6 +34,7 @@ export function PlayableWindow({ src, title, cover }: PlayableWindowProps) {
         <iframe
           src={src}
           title={title}
+          scrolling="no"
           allow="autoplay; fullscreen; accelerometer; gyroscope"
         />
       ) : (
