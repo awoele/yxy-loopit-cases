@@ -1,5 +1,7 @@
 # AI 创意互动实验｜Loopit Cases
 
+GitHub Pages：<https://awoele.github.io/yxy-loopit-cases/>
+
 面向简历与作品集的单页互动展示，集中呈现三个可直接试玩的 Loopit Case：
 
 - `#MyJJKDomain`：三卡策略游戏
@@ -21,5 +23,22 @@ npm run dev
 npm run build
 npm test
 ```
+
+## GitHub Pages
+
+`.github/workflows/pages.yml` 会在 `main` 分支更新时构建并发布静态站点。部署目标固定为仓库 `awoele/yxy-loopit-cases`，页面路径为 `/yxy-loopit-cases/`。
+
+在 Windows PowerShell 中可用与 CI 相同的配置验证静态导出：
+
+```powershell
+$env:GITHUB_PAGES = "true"
+$env:GITHUB_REPOSITORY = "awoele/yxy-loopit-cases"
+$env:NEXT_PUBLIC_BASE_PATH = "/yxy-loopit-cases"
+$env:NEXT_PUBLIC_SITE_URL = "https://awoele.github.io/yxy-loopit-cases/"
+npm run build:pages
+npm run test:pages
+```
+
+本地封面、Logo、Next.js 脚本与样式会自动带上仓库路径前缀；外部 Loopit iframe 和独立试玩链接保持原地址。
 
 项目中的动漫及艺人相关内容仅用于非商业概念原型与个人作品展示。

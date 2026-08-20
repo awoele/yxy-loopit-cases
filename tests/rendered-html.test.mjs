@@ -43,7 +43,10 @@ test("renders the three-case showcase and social metadata", async () => {
   assert.match(html, /#MyJJKDomain/);
   assert.match(html, /Pick\. Play\. Make\./);
   assert.match(html, /KATSEYE Beat Flip/);
-  assert.match(html, /https:\/\/showcase\.local\/og\.png/);
+  assert.match(
+    html,
+    /https:\/\/awoele\.github\.io\/yxy-loopit-cases\/og\.png/,
+  );
   assert.doesNotMatch(html, /Expression Hunt|表情捕捉/i);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });

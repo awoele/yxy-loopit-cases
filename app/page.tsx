@@ -1,5 +1,8 @@
 import { PlayableWindow } from "./PlayableWindow";
 
+const assetBase = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
+const publicAsset = (path: string) => `${assetBase}${path}`;
+
 const jjkPublishedUrl =
   "https://share.loopit.me/game/bf21b412-b9f9-44bf-9888-030ef1c95912?l_data=%7B%22said%22%3A%22sa_5Zp4NDM7%22%2C%22ssuid%22%3A%22ss_KYDKucT4%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%22bf21b412-b9f9-44bf-9888-030ef1c95912%22%7D";
 const jjkEmbedUrl =
@@ -34,7 +37,7 @@ const cases = [
     description: "以图片为入口串联模板选择、热门案例试玩与再创作，让用户在同一页面完成“看懂—试玩—开始制作”。",
     src: loopitTemplatesEmbedUrl,
     href: loopitTemplatesPublishedUrl,
-    cover: "/covers/loopit-template-case.png",
+    cover: publicAsset("/covers/loopit-template-case.png"),
     accent: "pink",
   },
   {
@@ -45,7 +48,7 @@ const cases = [
     description: "跟随音乐节拍滑动翻卡，以 Perfect、Great 与 Combo 反馈完成一轮挑战。",
     src: katseyeEmbedUrl,
     href: katseyePublishedUrl,
-    cover: "/covers/katseye-free-normal.png",
+    cover: publicAsset("/covers/katseye-free-normal.png"),
     accent: "cyan",
   },
 ] as const;
@@ -64,7 +67,11 @@ export default function Home() {
           rel="noreferrer"
           aria-label="访问 Loopit 官网"
         >
-          <img className="loopit-logo" src="/loopit-logo.png" alt="Loopit" />
+          <img
+            className="loopit-logo"
+            src={publicAsset("/loopit-logo.png")}
+            alt="Loopit"
+          />
           <span aria-hidden="true">↗</span>
         </a>
       </header>
