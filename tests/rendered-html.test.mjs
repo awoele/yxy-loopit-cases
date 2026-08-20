@@ -72,6 +72,9 @@ test("uses only the three published Loopit cases", async () => {
   ]) {
     assert.match(html, new RegExp(`https://(?:share|cdn-cf)\\.loopit\\.me/[^\"']*${id}`));
   }
+  assert.match(html, /2090319866601951232/);
+  assert.match(html, /sa_WseH2SFn/);
+  assert.doesNotMatch(html, /sa_532NvcWJ|ss_YFu9KYmS/);
   assert.doesNotMatch(html, /809bf4dd-d9e8-4933-93c9-2d4ce7b02ad0/);
 });
 
