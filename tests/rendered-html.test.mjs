@@ -46,6 +46,9 @@ test("renders the six-case showcase and social metadata", async () => {
   assert.match(html, /Emergency Draft/);
   assert.match(html, /#NarutoNinjaMission/);
   assert.match(html, /Spider Sense Online/);
+  assert.match(html, /World Studio/);
+  assert.match(html, /world-studio\/world-studio-comparison-01\.mp4/);
+  assert.match(html, /world-studio\/world-studio-comparison-02\.mp4/);
   assert.match(
     html,
     /https:\/\/awoele\.github\.io\/yxy-loopit-cases\/og\.png/,
@@ -65,6 +68,8 @@ test("uses only the six published Loopit cases", async () => {
     access(path.join(rootPath, "dist", "client", "covers", "loopit-template-case.png")),
     access(path.join(rootPath, "dist", "client", "covers", "katseye-free-normal.png")),
     access(path.join(rootPath, "dist", "client", "loopit-logo.png")),
+    access(path.join(rootPath, "dist", "client", "world-studio", "world-studio-comparison-01.mp4")),
+    access(path.join(rootPath, "dist", "client", "world-studio", "world-studio-comparison-02.mp4")),
   ]);
   const response = await render();
   const html = await response.text();

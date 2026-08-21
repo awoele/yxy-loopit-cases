@@ -28,6 +28,21 @@ const spiderSensePublishedUrl =
 const spiderSenseEmbedUrl =
   "https://cdn-cf.loopit.me/public/game/3b750a31-70cf-422e-9452-ae8f5250e632/2090722126561554432/workspace/dist/index.html?cfg_hash=d3e8f213&l_data=%7B%22said%22%3A%22sa_NJ72uLu9%22%2C%22ssuid%22%3A%22ss_xc5fpkJP%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%223b750a31-70cf-422e-9452-ae8f5250e632%22%7D";
 
+const worldStudioCases = [
+  {
+    index: "01",
+    title: "World Studio / Comparison 01",
+    description: "世界模型渲染对比：从输入画面到可探索场景的生成过程。",
+    src: publicAsset("/world-studio/world-studio-comparison-01.mp4"),
+  },
+  {
+    index: "02",
+    title: "World Studio / Comparison 02",
+    description: "世界模型渲染对比：另一组场景与运动结果的完整演示。",
+    src: publicAsset("/world-studio/world-studio-comparison-02.mp4"),
+  },
+] as const;
+
 const cases = [
   {
     index: "01",
@@ -164,6 +179,35 @@ export default function Home() {
             </div>
           </article>
         ))}
+      </section>
+
+      <section className="world-studio" aria-labelledby="world-studio-title">
+        <div className="world-studio-heading">
+          <p className="eyebrow">WORLD MODEL · RENDERED CASES</p>
+          <h2 id="world-studio-title">World Studio</h2>
+          <p>两组世界模型渲染过程与结果对比。</p>
+        </div>
+        <div className="world-studio-grid">
+          {worldStudioCases.map((item) => (
+            <article className="world-studio-card" key={item.src}>
+              <div className="world-studio-card__topline">
+                <span>{item.index}</span>
+                <span>VIDEO CASE</span>
+              </div>
+              <div className="world-studio-video-frame">
+                <video
+                  controls
+                  playsInline
+                  preload="metadata"
+                  src={item.src}
+                  aria-label={item.title}
+                />
+              </div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <footer>
