@@ -152,39 +152,46 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="case-track" aria-label="六个可试玩的 Loopit Case">
-        {cases.map((item) => (
-          <article className={`case-card case-card--${item.accent}`} key={item.title}>
-            <div className="case-topline">
-              <span>{item.index}</span>
-              <span>{item.meta}</span>
-            </div>
-
-            <PlayableWindow
-              src={item.src}
-              title={`${item.title} ${item.subtitle}`}
-              cover={item.cover}
-              contentScale={item.contentScale}
-            />
-
-            <div className="case-copy">
-              <div>
-                <h2>{item.title}</h2>
-                <p className="case-subtitle">{item.subtitle}</p>
+      <section className="case-section" aria-labelledby="content-cases-title">
+        <div className="case-section-heading">
+          <p className="eyebrow">CONTENT CASES · PLAYABLE INTERACTIONS</p>
+          <h2 id="content-cases-title">内容 Case</h2>
+          <p>六个可直接试玩的 Loopit 互动原型。</p>
+        </div>
+        <div className="case-track" aria-label="六个可试玩的 Loopit Case">
+          {cases.map((item) => (
+            <article className={`case-card case-card--${item.accent}`} key={item.title}>
+              <div className="case-topline">
+                <span>{item.index}</span>
+                <span>{item.meta}</span>
               </div>
-              <p className="case-description">{item.description}</p>
-              <a href={item.href} target="_blank" rel="noreferrer">
-                独立窗口试玩 <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </article>
-        ))}
+
+              <PlayableWindow
+                src={item.src}
+                title={`${item.title} ${item.subtitle}`}
+                cover={item.cover}
+                contentScale={item.contentScale}
+              />
+
+              <div className="case-copy">
+                <div>
+                  <h2>{item.title}</h2>
+                  <p className="case-subtitle">{item.subtitle}</p>
+                </div>
+                <p className="case-description">{item.description}</p>
+                <a href={item.href} target="_blank" rel="noreferrer">
+                  独立窗口试玩 <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="world-studio" aria-labelledby="world-studio-title">
         <div className="world-studio-heading">
-          <p className="eyebrow">WORLD MODEL · RENDERED CASES</p>
-          <h2 id="world-studio-title">World Studio</h2>
+          <p className="eyebrow">WORLD MODEL · VIDEO CASES</p>
+          <h2 id="world-studio-title">世界模型 Case</h2>
           <p>两组世界模型渲染过程与结果对比。</p>
         </div>
         <div className="world-studio-grid">

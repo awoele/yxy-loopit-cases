@@ -46,7 +46,9 @@ test("renders the six-case showcase and social metadata", async () => {
   assert.match(html, /Emergency Draft/);
   assert.match(html, /#NarutoNinjaMission/);
   assert.match(html, /Spider Sense Online/);
-  assert.match(html, /World Studio/);
+  assert.match(html, /内容 Case/);
+  assert.match(html, /VIDEO CASE/);
+  assert.match(html, /世界模型 Case/);
   assert.match(html, /world-studio\/world-studio-comparison-01\.mp4/);
   assert.match(html, /world-studio\/world-studio-comparison-02\.mp4/);
   assert.match(

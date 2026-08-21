@@ -144,6 +144,36 @@ main {
   margin-inline: auto;
 }
 
+.case-section {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.case-section-heading {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.case-section-heading .eyebrow {
+  margin-bottom: 2px;
+}
+
+.case-section-heading h2 {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 56px);
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+}
+
+.case-section-heading > p:last-child {
+  margin: 0;
+  color: var(--muted-white);
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .case-card {
   display: flex;
   flex-direction: column;
@@ -468,6 +498,12 @@ footer p {
   }
 
   .world-studio {
+    width: auto;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .case-section {
     width: auto;
     margin-right: 24px;
     margin-left: 24px;
