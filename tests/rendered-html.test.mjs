@@ -69,6 +69,8 @@ test("uses only the six published Loopit cases", async () => {
     access(path.join(rootPath, "dist", "client", "og.png")),
     access(path.join(rootPath, "dist", "client", "covers", "loopit-template-case.png")),
     access(path.join(rootPath, "dist", "client", "covers", "katseye-free-normal.png")),
+    access(path.join(rootPath, "dist", "client", "covers", "loopit-case-04.webp")),
+    access(path.join(rootPath, "dist", "client", "covers", "loopit-case-06.webp")),
     access(path.join(rootPath, "dist", "client", "loopit-logo.png")),
     access(path.join(rootPath, "dist", "client", "world-studio", "world-studio-comparison-01.mp4")),
     access(path.join(rootPath, "dist", "client", "world-studio", "world-studio-comparison-02.mp4")),
@@ -86,6 +88,8 @@ test("uses only the six published Loopit cases", async () => {
     assert.match(html, new RegExp(`https://(?:share|cdn-cf)\\.loopit\\.me/[^\"']*${id}`));
   }
   assert.match(html, /2090319866601951232/);
+  assert.match(html, /2090814302524035072/);
+  assert.match(html, /2090815766231277568/);
   assert.match(html, /sa_WseH2SFn/);
   assert.doesNotMatch(html, /sa_532NvcWJ|ss_YFu9KYmS/);
   assert.doesNotMatch(html, /809bf4dd-d9e8-4933-93c9-2d4ce7b02ad0/);

@@ -18,7 +18,7 @@ const katseyeEmbedUrl =
 const emergencyDraftPublishedUrl =
   "https://share.loopit.me/game/b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2?l_data=%7B%22said%22%3A%22sa_eCJKwVRM%22%2C%22ssuid%22%3A%22ss_t552eWHw%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%22b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2%22%7D";
 const emergencyDraftEmbedUrl =
-  "https://cdn-cf.loopit.me/public/game/b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2/2090723733567188992/workspace/dist/index.html?cfg_hash=d3e8f213&l_data=%7B%22said%22%3A%22sa_eCJKwVRM%22%2C%22ssuid%22%3A%22ss_t552eWHw%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%22b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2%22%7D";
+  "https://cdn-cf.loopit.me/public/game/b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2/2090814302524035072/workspace/dist/index.html?cfg_hash=d3e8f213&l_data=%7B%22said%22%3A%22sa_eCJKwVRM%22%2C%22ssuid%22%3A%22ss_t552eWHw%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%22b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2%22%7D";
 const narutoPublishedUrl =
   "https://share.loopit.me/game/18d149e9-9432-4780-8909-0579e659d371?l_data=%7B%22said%22%3A%22sa_ePf7ArVk%22%2C%22ssuid%22%3A%22ss_f9sAvrt7%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%2218d149e9-9432-4780-8909-0579e659d371%22%7D";
 const narutoEmbedUrl =
@@ -26,7 +26,7 @@ const narutoEmbedUrl =
 const spiderSensePublishedUrl =
   "https://share.loopit.me/game/3b750a31-70cf-422e-9452-ae8f5250e632?l_data=%7B%22said%22%3A%22sa_NJ72uLu9%22%2C%22ssuid%22%3A%22ss_xc5fpkJP%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%223b750a31-70cf-422e-9452-ae8f5250e632%22%7D";
 const spiderSenseEmbedUrl =
-  "https://cdn-cf.loopit.me/public/game/3b750a31-70cf-422e-9452-ae8f5250e632/2090722126561554432/workspace/dist/index.html?cfg_hash=d3e8f213&l_data=%7B%22said%22%3A%22sa_NJ72uLu9%22%2C%22ssuid%22%3A%22ss_xc5fpkJP%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%223b750a31-70cf-422e-9452-ae8f5250e632%22%7D";
+  "https://cdn-cf.loopit.me/public/game/3b750a31-70cf-422e-9452-ae8f5250e632/2090815766231277568/workspace/dist/index.html?cfg_hash=d3e8f213&l_data=%7B%22said%22%3A%22sa_NJ72uLu9%22%2C%22ssuid%22%3A%22ss_xc5fpkJP%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%223b750a31-70cf-422e-9452-ae8f5250e632%22%7D";
 
 const worldStudioCases = [
   {
@@ -89,7 +89,7 @@ const cases = [
     description: "在有限资金中招募三名英雄，读取敌方行动并完成三场战术任务。",
     src: emergencyDraftEmbedUrl,
     href: emergencyDraftPublishedUrl,
-    cover: "https://share.loopit.me/og/game/b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2",
+    cover: publicAsset("/covers/loopit-case-04.webp"),
     accent: "violet",
     contentScale: 1,
   },
@@ -113,7 +113,7 @@ const cases = [
     description: "跟随城市节奏击中发光区域，把蜘蛛感应转化为连续命中与连击反馈。",
     src: spiderSenseEmbedUrl,
     href: spiderSensePublishedUrl,
-    cover: "https://share.loopit.me/og/game/3b750a31-70cf-422e-9452-ae8f5250e632",
+    cover: publicAsset("/covers/loopit-case-06.webp"),
     accent: "cyan",
     contentScale: 1,
   },
