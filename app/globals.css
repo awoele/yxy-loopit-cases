@@ -126,11 +126,14 @@ main {
 }
 
 .hero-copy > p {
-  max-width: 560px;
+  max-width: none;
   margin: 0;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1.65;
+  color: var(--muted-white);
+  font-size: clamp(14px, 1.2vw, 17px);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .case-track {
@@ -163,6 +166,7 @@ main {
 .case-section-heading h2 {
   margin: 0;
   font-size: clamp(32px, 4vw, 56px);
+  font-weight: 750;
   line-height: 0.96;
   letter-spacing: -0.045em;
 }
@@ -170,8 +174,11 @@ main {
 .case-section-heading > p:last-child {
   margin: 0;
   color: var(--muted-white);
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .case-card {
@@ -396,6 +403,7 @@ main {
 .world-studio-heading h2 {
   margin: 0;
   font-size: clamp(32px, 4vw, 56px);
+  font-weight: 750;
   line-height: 0.96;
   letter-spacing: -0.045em;
 }
@@ -403,8 +411,11 @@ main {
 .world-studio-heading > p:last-child {
   margin: 0;
   color: var(--muted-white);
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .world-studio-grid {
@@ -495,6 +506,13 @@ footer p {
 
   .hero-copy {
     align-items: center;
+  }
+
+  .hero-copy > p,
+  .case-section-heading > p:last-child,
+  .world-studio-heading > p:last-child {
+    max-width: 560px;
+    white-space: normal;
   }
 
   .world-studio {

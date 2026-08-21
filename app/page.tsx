@@ -32,13 +32,13 @@ const worldStudioCases = [
   {
     index: "01",
     title: "World Studio / Comparison 01",
-    description: "世界模型渲染对比：从输入画面到可探索场景的生成过程。",
+    description: "冰雪荒原与巨型冰雕构成的世界探索片段。",
     src: publicAsset("/world-studio/world-studio-comparison-01.mp4"),
   },
   {
     index: "02",
     title: "World Studio / Comparison 02",
-    description: "世界模型渲染对比：另一组场景与运动结果的完整演示。",
+    description: "暗色未来城市与岩层地貌之间的世界探索片段。",
     src: publicAsset("/world-studio/world-studio-comparison-02.mp4"),
   },
 ] as const;
@@ -154,7 +154,7 @@ export default function Home() {
 
       <section className="case-section" aria-labelledby="content-cases-title">
         <div className="case-section-heading">
-          <p className="eyebrow">CONTENT CASES · PLAYABLE INTERACTIONS</p>
+          <p className="eyebrow">01 / CONTENT CASES</p>
           <h2 id="content-cases-title">内容 Case</h2>
           <p>六个可直接试玩的 Loopit 互动原型。</p>
         </div>
@@ -190,7 +190,7 @@ export default function Home() {
 
       <section className="world-studio" aria-labelledby="world-studio-title">
         <div className="world-studio-heading">
-          <p className="eyebrow">WORLD MODEL · VIDEO CASES</p>
+          <p className="eyebrow">02 / WORLD MODEL CASES</p>
           <h2 id="world-studio-title">世界模型 Case</h2>
           <p>两组世界模型渲染过程与结果对比。</p>
         </div>
