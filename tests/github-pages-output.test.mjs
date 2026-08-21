@@ -11,7 +11,7 @@ test("exports the showcase under the GitHub repository base path", async () => {
   assert.match(html, /\/yxy-loopit-cases\/loopit-logo\.png/);
   assert.match(html, /\/yxy-loopit-cases\/covers\/loopit-template-case\.png/);
   assert.match(html, /\/yxy-loopit-cases\/covers\/katseye-free-normal\.png/);
-  assert.match(html, /\/yxy-loopit-cases\/covers\/loopit-case-04\.webp/);
+  assert.match(html, /\/yxy-loopit-cases\/covers\/loopit-case-04-v2\.webp/);
   assert.match(html, /\/yxy-loopit-cases\/covers\/loopit-case-06\.webp/);
   assert.match(html, /\/yxy-loopit-cases\/world-studio\/world-studio-comparison-01\.mp4/);
   assert.match(html, /\/yxy-loopit-cases\/world-studio\/world-studio-comparison-02\.mp4/);
@@ -48,7 +48,7 @@ test("exports the showcase under the GitHub repository base path", async () => {
     access(new URL("loopit-logo.png", output)),
     access(new URL("covers/loopit-template-case.png", output)),
     access(new URL("covers/katseye-free-normal.png", output)),
-    access(new URL("covers/loopit-case-04.webp", output)),
+    access(new URL("covers/loopit-case-04-v2.webp", output)),
     access(new URL("covers/loopit-case-06.webp", output)),
     access(new URL("world-studio/world-studio-comparison-01.mp4", output)),
     access(new URL("world-studio/world-studio-comparison-02.mp4", output)),

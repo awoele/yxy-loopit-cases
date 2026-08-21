@@ -69,7 +69,7 @@ test("uses only the six published Loopit cases", async () => {
     access(path.join(rootPath, "dist", "client", "og.png")),
     access(path.join(rootPath, "dist", "client", "covers", "loopit-template-case.png")),
     access(path.join(rootPath, "dist", "client", "covers", "katseye-free-normal.png")),
-    access(path.join(rootPath, "dist", "client", "covers", "loopit-case-04.webp")),
+    access(path.join(rootPath, "dist", "client", "covers", "loopit-case-04-v2.webp")),
     access(path.join(rootPath, "dist", "client", "covers", "loopit-case-06.webp")),
     access(path.join(rootPath, "dist", "client", "loopit-logo.png")),
     access(path.join(rootPath, "dist", "client", "world-studio", "world-studio-comparison-01.mp4")),

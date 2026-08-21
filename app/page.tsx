@@ -89,7 +89,7 @@ const cases = [
     description: "在有限资金中招募三名英雄，读取敌方行动并完成三场战术任务。",
     src: emergencyDraftEmbedUrl,
     href: emergencyDraftPublishedUrl,
-    cover: publicAsset("/covers/loopit-case-04.webp"),
+    cover: publicAsset("/covers/loopit-case-04-v2.webp"),
     accent: "violet",
     contentScale: 1,
   },
