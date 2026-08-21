@@ -2,13 +2,16 @@
 
 GitHub Pages：<https://awoele.github.io/yxy-loopit-cases/>
 
-面向简历与作品集的单页互动展示，集中呈现三个可直接试玩的 Loopit Case：
+面向简历与作品集的单页互动展示，集中呈现六个可直接试玩的 Loopit Case：
 
 - `#MyJJKDomain`：三卡策略游戏
 - `Pick. Play. Make.`：Loopit 模板探索与再创作
 - `KATSEYE Beat Flip`：自由滑动与音乐卡点
+- `Emergency Draft`：三英雄策略与敌方行动判断
+- `#NarutoNinjaMission`：忍者姿势匹配
+- `Spider Sense Online`：节奏点击与连击反馈
 
-页面参考 Loopit 官网的品牌粉画布、粗体标题和竖屏试玩窗口，并通过三栏布局支持横向比较。三个案例均接入已发布的 Loopit 线上版本，不再打包本地游戏内容；窗口内使用发布构建直达地址，独立试玩使用公开分享页。每个作品仅在点击后加载，避免多个互动同时占用音频和网络资源。
+页面参考 Loopit 官网的品牌粉画布、粗体标题和竖屏试玩窗口，并通过三栏布局支持横向比较。六个案例均接入已发布的 Loopit 线上版本，不再打包本地游戏内容；窗口内使用发布构建直达地址，独立试玩使用公开分享页。每个作品仅在点击后加载，避免多个互动同时占用音频和网络资源。
 
 ## 本地运行
 

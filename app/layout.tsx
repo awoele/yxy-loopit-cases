@@ -20,7 +20,7 @@ const siteUrl = new URL(
 const socialImageUrl = new URL("og.png", siteUrl).toString();
 const title = "AI 创意互动实验｜Loopit Cases";
 const description =
-  "三个可直接试玩的 Loopit 创意互动 Case：策略、滑动选择与音乐卡点。";
+  "六个可直接试玩的 Loopit 创意互动 Case：策略、模板探索、节奏与动作匹配。";
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         url: socialImageUrl,
         width: 1200,
         height: 630,
-        alt: "AI 创意互动实验：三个并排的可玩 Case 窗口",
+        alt: "AI 创意互动实验：六个可玩的 Case 窗口",
       },
     ],
   },

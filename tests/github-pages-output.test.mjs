@@ -23,6 +23,9 @@ test("exports the showcase under the GitHub repository base path", async () => {
     "bf21b412-b9f9-44bf-9888-030ef1c95912",
     "5f168612-eddb-4432-89f0-a8130fe0599b",
     "31aa1f18-6298-48ef-b7f4-da9c5988fc28",
+    "b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2",
+    "18d149e9-9432-4780-8909-0579e659d371",
+    "3b750a31-70cf-422e-9452-ae8f5250e632",
   ]) {
     assert.match(
       html,

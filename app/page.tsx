@@ -15,6 +15,18 @@ const katseyePublishedUrl =
   "https://share.loopit.me/game/31aa1f18-6298-48ef-b7f4-da9c5988fc28?l_data=%7B%22said%22%3A%22sa_9nHN9qqZ%22%2C%22ssuid%22%3A%22ss_EcWTtzLW%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%2231aa1f18-6298-48ef-b7f4-da9c5988fc28%22%7D";
 const katseyeEmbedUrl =
   "https://cdn-cf.loopit.me/public/game/31aa1f18-6298-48ef-b7f4-da9c5988fc28/2076582810969190400/workspace/dist/index.html?cfg_hash=d3e8f213";
+const emergencyDraftPublishedUrl =
+  "https://share.loopit.me/game/b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2?l_data=%7B%22said%22%3A%22sa_eCJKwVRM%22%2C%22ssuid%22%3A%22ss_t552eWHw%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%22b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2%22%7D";
+const emergencyDraftEmbedUrl =
+  "https://cdn-cf.loopit.me/public/game/b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2/2090723733567188992/workspace/dist/index.html?cfg_hash=d3e8f213&l_data=%7B%22said%22%3A%22sa_eCJKwVRM%22%2C%22ssuid%22%3A%22ss_t552eWHw%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%22b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2%22%7D";
+const narutoPublishedUrl =
+  "https://share.loopit.me/game/18d149e9-9432-4780-8909-0579e659d371?l_data=%7B%22said%22%3A%22sa_ePf7ArVk%22%2C%22ssuid%22%3A%22ss_f9sAvrt7%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%2218d149e9-9432-4780-8909-0579e659d371%22%7D";
+const narutoEmbedUrl =
+  "https://cdn-cf.loopit.me/public/game/18d149e9-9432-4780-8909-0579e659d371/2084919196721901568/workspace/dist/index.html?l_data=%7B%22said%22%3A%22sa_ePf7ArVk%22%2C%22ssuid%22%3A%22ss_f9sAvrt7%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%2218d149e9-9432-4780-8909-0579e659d371%22%7D";
+const spiderSensePublishedUrl =
+  "https://share.loopit.me/game/3b750a31-70cf-422e-9452-ae8f5250e632?l_data=%7B%22said%22%3A%22sa_NJ72uLu9%22%2C%22ssuid%22%3A%22ss_xc5fpkJP%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%223b750a31-70cf-422e-9452-ae8f5250e632%22%7D";
+const spiderSenseEmbedUrl =
+  "https://cdn-cf.loopit.me/public/game/3b750a31-70cf-422e-9452-ae8f5250e632/2090722126561554432/workspace/dist/index.html?cfg_hash=d3e8f213&l_data=%7B%22said%22%3A%22sa_NJ72uLu9%22%2C%22ssuid%22%3A%22ss_xc5fpkJP%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%223b750a31-70cf-422e-9452-ae8f5250e632%22%7D";
 
 const cases = [
   {
@@ -54,6 +66,42 @@ const cases = [
     accent: "cyan",
     contentScale: 1,
   },
+  {
+    index: "04",
+    title: "Emergency Draft",
+    subtitle: "三英雄策略游戏",
+    meta: "RECRUIT · READ · COUNTER",
+    description: "在有限资金中招募三名英雄，读取敌方行动并完成三场战术任务。",
+    src: emergencyDraftEmbedUrl,
+    href: emergencyDraftPublishedUrl,
+    cover: "https://share.loopit.me/og/game/b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2",
+    accent: "violet",
+    contentScale: 1,
+  },
+  {
+    index: "05",
+    title: "#NarutoNinjaMission",
+    subtitle: "忍者姿势匹配互动",
+    meta: "DRAG · MATCH · SNAPSHOT",
+    description: "拖动角色关节点匹配忍者剪影，在逐级姿势挑战中完成配准并留下快照。",
+    src: narutoEmbedUrl,
+    href: narutoPublishedUrl,
+    cover: "https://share.loopit.me/og/game/18d149e9-9432-4780-8909-0579e659d371",
+    accent: "orange",
+    contentScale: 1,
+  },
+  {
+    index: "06",
+    title: "Spider Sense Online",
+    subtitle: "节奏点击互动",
+    meta: "TAP · RHYTHM · COMBO",
+    description: "跟随城市节奏击中发光区域，把蜘蛛感应转化为连续命中与连击反馈。",
+    src: spiderSenseEmbedUrl,
+    href: spiderSensePublishedUrl,
+    cover: "https://share.loopit.me/og/game/3b750a31-70cf-422e-9452-ae8f5250e632",
+    accent: "cyan",
+    contentScale: 1,
+  },
 ] as const;
 
 export default function Home() {
@@ -80,16 +128,16 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <p className="eyebrow">AI CREATIVE INTERACTIONS · 03 PLAYABLE CASES</p>
+        <p className="eyebrow">AI CREATIVE INTERACTIONS · 06 PLAYABLE CASES</p>
         <div className="hero-copy">
           <h1>AI 创意互动实验</h1>
           <p>
-            将创意假设转化为可直接试玩的互动原型，覆盖策略、模板探索与节奏三类机制。
+            将创意假设转化为可直接试玩的互动原型，覆盖策略、模板探索、节奏与动作匹配等机制。
           </p>
         </div>
       </section>
 
-      <section className="case-track" aria-label="三个可试玩的 Loopit Case">
+      <section className="case-track" aria-label="六个可试玩的 Loopit Case">
         {cases.map((item) => (
           <article className={`case-card case-card--${item.accent}`} key={item.title}>
             <div className="case-topline">

@@ -33,7 +33,7 @@ async function render() {
   );
 }
 
-test("renders the three-case showcase and social metadata", async () => {
+test("renders the six-case showcase and social metadata", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -43,6 +43,9 @@ test("renders the three-case showcase and social metadata", async () => {
   assert.match(html, /#MyJJKDomain/);
   assert.match(html, /Pick\. Play\. Make\./);
   assert.match(html, /KATSEYE Beat Flip/);
+  assert.match(html, /Emergency Draft/);
+  assert.match(html, /#NarutoNinjaMission/);
+  assert.match(html, /Spider Sense Online/);
   assert.match(
     html,
     /https:\/\/awoele\.github\.io\/yxy-loopit-cases\/og\.png/,
@@ -51,7 +54,7 @@ test("renders the three-case showcase and social metadata", async () => {
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });
 
-test("uses only the three published Loopit cases", async () => {
+test("uses only the six published Loopit cases", async () => {
   const jjk = path.join(rootPath, "dist", "client", "cases", "jjk", "index.html");
   const katseye = path.join(rootPath, "dist", "client", "cases", "katseye", "index.html");
 
@@ -69,6 +72,9 @@ test("uses only the three published Loopit cases", async () => {
     "bf21b412-b9f9-44bf-9888-030ef1c95912",
     "5f168612-eddb-4432-89f0-a8130fe0599b",
     "31aa1f18-6298-48ef-b7f4-da9c5988fc28",
+    "b1f13a6d-3489-4ad3-9a1e-72ea170d5aa2",
+    "18d149e9-9432-4780-8909-0579e659d371",
+    "3b750a31-70cf-422e-9452-ae8f5250e632",
   ]) {
     assert.match(html, new RegExp(`https://(?:share|cdn-cf)\\.loopit\\.me/[^\"']*${id}`));
   }
@@ -92,7 +98,7 @@ test("keeps embedded playables free of native scrollbars", async () => {
   ]);
   assert.match(playableWindow, /scrolling="no"/);
   assert.equal((page.match(/contentScale:\s*0\.85/g) ?? []).length, 1);
-  assert.equal((page.match(/contentScale:\s*1,/g) ?? []).length, 2);
+  assert.equal((page.match(/contentScale:\s*1,/g) ?? []).length, 5);
   assert.match(
     styles,
     /\.play-viewport--scaled iframe\s*\{[^}]*width:\s*117\.6471%;[^}]*height:\s*117\.6471%;[^}]*transform:\s*scale\(0\.85\)/s,
