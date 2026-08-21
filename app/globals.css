@@ -91,8 +91,8 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 18px;
-  padding: clamp(40px, 6vw, 86px) 0 clamp(34px, 4vw, 54px);
+  gap: 16px;
+  padding: clamp(36px, 5.5vw, 78px) 0 clamp(28px, 3.2vw, 44px);
   text-align: center;
 }
 
@@ -111,7 +111,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 22px;
+  gap: 18px;
   width: 100%;
 }
 
@@ -137,7 +137,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 320px));
   column-gap: clamp(72px, 8vw, 120px);
-  row-gap: clamp(80px, 8vw, 120px);
+  row-gap: clamp(56px, 6vw, 88px);
   justify-content: space-between;
   width: 100%;
   max-width: 1280px;
@@ -145,6 +145,8 @@ main {
 }
 
 .case-card {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
 }
 
@@ -302,6 +304,9 @@ main {
 }
 
 .case-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 18px 2px 6px;
   border-bottom: 1px solid var(--line);
 }
@@ -321,6 +326,7 @@ main {
 }
 
 .case-description {
+  flex: 1;
   min-height: 58px;
   margin: 15px 0 18px;
   color: var(--muted-white);
