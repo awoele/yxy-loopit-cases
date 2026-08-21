@@ -12,7 +12,7 @@ test("exports the showcase under the GitHub repository base path", async () => {
   assert.match(html, /\/yxy-loopit-cases\/covers\/loopit-template-case\.png/);
   assert.match(html, /\/yxy-loopit-cases\/covers\/katseye-free-normal\.png/);
   assert.match(html, /\/yxy-loopit-cases\/covers\/loopit-case-04-live-v3\.png/);
-  assert.match(html, /\/yxy-loopit-cases\/covers\/loopit-case-06-live-v2\.png/);
+  assert.match(html, /\/yxy-loopit-cases\/covers\/loopit-case-06-live-v3\.png/);
   assert.match(html, /\/yxy-loopit-cases\/world-studio\/world-studio-comparison-01\.mp4/);
   assert.match(html, /\/yxy-loopit-cases\/world-studio\/world-studio-comparison-02\.mp4/);
   assert.match(
@@ -38,7 +38,7 @@ test("exports the showcase under the GitHub repository base path", async () => {
   }
   assert.match(html, /2090319866601951232/);
   assert.match(html, /2090814302524035072/);
-  assert.match(html, /2090820331559227392/);
+  assert.match(html, /2090825244402028544/);
   assert.match(html, /sa_WseH2SFn/);
   assert.doesNotMatch(html, /sa_532NvcWJ|ss_YFu9KYmS/);
   assert.doesNotMatch(html, /809bf4dd-d9e8-4933-93c9-2d4ce7b02ad0/);
@@ -49,7 +49,7 @@ test("exports the showcase under the GitHub repository base path", async () => {
     access(new URL("covers/loopit-template-case.png", output)),
     access(new URL("covers/katseye-free-normal.png", output)),
     access(new URL("covers/loopit-case-04-live-v3.png", output)),
-    access(new URL("covers/loopit-case-06-live-v2.png", output)),
+    access(new URL("covers/loopit-case-06-live-v3.png", output)),
     access(new URL("world-studio/world-studio-comparison-01.mp4", output)),
     access(new URL("world-studio/world-studio-comparison-02.mp4", output)),
   ]);

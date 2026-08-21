@@ -26,7 +26,7 @@ const narutoEmbedUrl =
 const spiderSensePublishedUrl =
   "https://share.loopit.me/game/3b750a31-70cf-422e-9452-ae8f5250e632?l_data=%7B%22said%22%3A%22sa_NJ72uLu9%22%2C%22ssuid%22%3A%22ss_xc5fpkJP%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%223b750a31-70cf-422e-9452-ae8f5250e632%22%7D";
 const spiderSenseEmbedUrl =
-  "https://cdn-cf.loopit.me/public/game/3b750a31-70cf-422e-9452-ae8f5250e632/2090820331559227392/workspace/dist/index.html?cfg_hash=d3e8f213&l_data=%7B%22said%22%3A%22sa_NJ72uLu9%22%2C%22ssuid%22%3A%22ss_xc5fpkJP%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%223b750a31-70cf-422e-9452-ae8f5250e632%22%7D";
+  "https://cdn-cf.loopit.me/public/game/3b750a31-70cf-422e-9452-ae8f5250e632/2090825244402028544/workspace/dist/index.html?cfg_hash=d3e8f213&l_data=%7B%22said%22%3A%22sa_NJ72uLu9%22%2C%22ssuid%22%3A%22ss_xc5fpkJP%22%2C%22sharer%22%3A%22028DD5C4-D53C-4981-A5B6-532E6B78C3B8%22%2C%22share_id%22%3A%223b750a31-70cf-422e-9452-ae8f5250e632%22%7D";
 
 const worldStudioCases = [
   {
@@ -113,7 +113,7 @@ const cases = [
     description: "跟随城市节奏击中发光区域，把蜘蛛感应转化为连续命中与连击反馈。",
     src: spiderSenseEmbedUrl,
     href: spiderSensePublishedUrl,
-    cover: publicAsset("/covers/loopit-case-06-live-v2.png"),
+    cover: publicAsset("/covers/loopit-case-06-live-v3.png"),
     accent: "cyan",
     contentScale: 1,
   },
