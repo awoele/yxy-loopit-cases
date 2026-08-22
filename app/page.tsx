@@ -31,14 +31,14 @@ const spiderSenseEmbedUrl =
 const worldStudioCases = [
   {
     index: "01",
-    title: "World Studio / Comparison 01",
-    description: "冰雪荒原与巨型冰雕构成的世界探索片段。",
+    title: "FROZEN GIANT",
+    description: "在冰雪荒原中探索巨型冰雕，观察角色移动、镜头与环境的连续性。",
     src: publicAsset("/world-studio/world-studio-comparison-01.mp4"),
   },
   {
     index: "02",
-    title: "World Studio / Comparison 02",
-    description: "暗色未来城市与岩层地貌之间的世界探索片段。",
+    title: "FRACTURED CITY",
+    description: "穿越黑色巨构城市与断裂岩层，测试场景切换与空间一致性。",
     src: publicAsset("/world-studio/world-studio-comparison-02.mp4"),
   },
 ] as const;
@@ -190,9 +190,9 @@ export default function Home() {
 
       <section className="world-studio" aria-labelledby="world-studio-title">
         <div className="world-studio-heading">
-          <p className="eyebrow">02 / WORLD MODEL CASES</p>
+          <p className="eyebrow">02 / WORLD MODEL EXPLORATIONS</p>
           <h2 id="world-studio-title">世界模型 Case</h2>
-          <p>两组世界模型渲染过程与结果对比。</p>
+          <p>两组由世界模型生成的可探索场景，记录从环境生成到可玩验证的过程。</p>
         </div>
         <div className="world-studio-grid">
           {worldStudioCases.map((item) => (
